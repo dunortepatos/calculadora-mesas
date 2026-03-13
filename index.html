@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Mesas - Dunorte</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+<div class="topo">
+
+  <div class="logo-sistema">
+    <img src="logo.png" alt="Dunorte Móveis">
+  </div>
+
+  <h1>Calculadora de Mesas</h1>
+  <p>Sistema de orçamento sob encomenda</p>
+
+</div>
+
+  <div class="painel">
+
+    <div class="card">
+      <label for="tipoMesa">Tipo de Mesa</label>
+      <select id="tipoMesa">
+        <option value="">Selecione</option>
+      </select>
+
+      <label for="madeira">Madeira</label>
+      <select id="madeira">
+        <option value="">Selecione</option>
+      </select>
+
+      <label for="espessura">Espessura</label>
+      <select id="espessura">
+        <option value="">Selecione</option>
+      </select>
+
+      <label for="largura">Largura</label>
+      <select id="largura">
+        <option value="">Selecione</option>
+      </select>
+
+      <label for="comprimento">Comprimento (m)</label>
+      <input type="number" id="comprimento" step="0.01" placeholder="Ex: 2.80" />
+
+      <label for="diametro">Diâmetro</label>
+      <select id="diametro">
+        <option value="">Selecione</option>
+      </select>
+
+      <label for="borda">Borda</label>
+      <select id="borda">
+        <option value="">Selecione</option>
+      </select>
+
+      <label for="acabamento">Acabamento</label>
+      <select id="acabamento">
+        <option value="">Selecione</option>
+      </select>
+
+      <label for="tipoPe">Tipo de Pé</label>
+      <select id="tipoPe">
+        <option value="">Selecione</option>
+      </select>
+
+      <label for="outrosDesc">Outros - Descrição</label>
+      <input type="text" id="outrosDesc" placeholder="Opcional" />
+
+      <label for="outrosValor">Outros - Valor</label>
+      <input type="number" id="outrosValor" step="0.01" placeholder="0,00" />
+
+<button id="btnCalcular">Calcular</button>
+<button id="btnNovo">Novo orçamento</button>
+    </div>
+
+    <div class="card resultado">
+      <h2>Resultado</h2>
+      <p id="valorFinal">R$ 0,00</p>
+      <div id="resumoOrcamento" class="resumo-orcamento">
+  <p><strong>Tipo:</strong> -</p>
+  <p><strong>Madeira:</strong> -</p>
+  <p><strong>Espessura:</strong> -</p>
+  <p><strong>Dimensões:</strong> -</p>
+  <p><strong>Borda:</strong> -</p>
+  <p><strong>Acabamento:</strong> -</p>
+  <p><strong>Pé:</strong> -</p>
+</div>
+      <button id="btnWhatsapp">Gerar texto WhatsApp</button>
+      
+<div class="historico-box">
+  <h3>Histórico</h3>
+  <div id="listaHistorico"></div>
+</div>
+    </div>
+  </div>
+
+  <script src="dados.js"></script>
+  <script src="script.js"></script>
+    </div>
+</div>
+</body>
+</html>
