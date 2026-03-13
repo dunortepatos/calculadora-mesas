@@ -585,3 +585,7 @@ btnNovo.addEventListener("click", () => {
 });
 
 iniciar();
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js")
+    .then(() => console.log("Service Worker registrado"));
+}
